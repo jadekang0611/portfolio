@@ -1,12 +1,12 @@
 import React from 'react';
 import '../Styles/LandingPage.css';
-import logo from '../image/logo.png';
+import logo from '../image/logo-animation.gif';
 
 function LandingPage() {
   return (
     <div class="wrapper ar-personal">
       <a href="#" class="logo hidden-md hidden-lg hidden-xs">
-        <img src={logo} width="40" height="40" alt="Jade Kang Logo" />
+        <img src={logo} width="64" height="64" alt="Jade Kang Logo" />
       </a>
       <div class="nav-trigger" role="button" title="sweet hamburger">
         <div class="hamburger">
@@ -61,12 +61,7 @@ function LandingPage() {
           <section clssName="left-section personal wow fadeIn"></section>
           <section className="right-section">
             <div className="main-logo">
-              <img
-                src="https://via.placeholder.com/35"
-                width="35"
-                height="35"
-                alt="logo"
-              />
+              <img src={logo} width="56" height="56" alt="logo" />
             </div>
             <div className="intro">
               <div className="intro-text">
