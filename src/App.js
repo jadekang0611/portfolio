@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import MainIntro from './Components/MainIntro';
+import './Styles/Intros.css';
+import MainIntroLeft from './Components/MainIntroLeft';
+import MainIntroRight from './Components/MainIntroRight';
 import SubIntro from './Components/SubIntro';
 import { render } from '@testing-library/react';
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -11,7 +13,15 @@ library.add(fab, faCheckSquare, faCoffee);
 
 function App() {
   const [showSubIntro, setShowSubIntro] = useState(false);
-  const [showMainIntro, setShowMainIntro] = useState(true);
+
+  function toggleSections() {
+    if (showSubIntro === true) {
+      return <SubIntro />;
+    } else {
+      return <MainIntroRight />;
+    }
+  }
+
   return (
     <div className="sub-personal">
       <div
@@ -24,13 +34,13 @@ function App() {
           <div class="icon"></div>
         </div>
       </div>
-      {showSubIntro && (
-        <>
-          <SubIntro />
-        </>
-      )}
 
-      <MainIntro />
+      <div className="main">
+        <section className="split-home">
+          <MainIntroLeft />
+          {toggleSections()};
+        </section>
+      </div>
     </div>
   );
 }
