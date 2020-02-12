@@ -2,60 +2,16 @@ import React from 'react';
 import '../Styles/LandingPage.css';
 import logo from '../image/logo-animation.gif';
 
-function LandingPage() {
+
+function MainIntro() {
   return (
-    <div class="wrapper ar-personal">
-      <a href="#" class="logo hidden-md hidden-lg hidden-xs">
-        <img src={logo} width="64" height="64" alt="Jade Kang Logo" />
-      </a>
+    <div class="wrapper sub-personal">
       <div class="nav-trigger" role="button" title="sweet hamburger">
         <div class="hamburger">
           <div class="icon"></div>
         </div>
       </div>
 
-      <div id="ar-about">
-        <div class="about-intro">
-          <h4>About Me</h4>
-          <h1>I'm Jade Kang</h1>
-          <h3>Software Engineer / Accountant</h3>
-          <p>
-            Eu euismod placerat mandamus sea, autem timeam hendrerit eu vel, sea
-            debet conclusionemque te. Veniam persius suavitate sit cu. Brute
-            suavitate maiestatis qui in, an eam sumo illud. Explicari
-            necessitatibus eam et. Ea oratio voluptua postulant eam, sit eu tale
-            molestiae, verear latine concludaturque ex vel. Sed mutat etiam
-            utroque te, vis at error eirmod numquam.
-          </p>
-          <p>
-            Brute suavitate maiestatis qui in, an eam sumo illud. Explicari
-            necessitatibus eam et. Ea oratio voluptua postulant eam, sit eu tale
-            molestiae, verear latine concludaturque ex vel. Sed mutat etiam
-            utroque te, vis at error eirmod numquam.
-          </p>
-          <div class="ar-footer">
-            <div class="nav-social">
-              <ul>
-                <li>
-                  <a href="#">
-                    <i class="ion-social-instagram-outline"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="ion-social-dribbble-outline"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="ion-social-github"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
       <div className="main">
         <section className="split-home">
           <section
@@ -91,6 +47,7 @@ function LandingPage() {
                   Contact Me
                 </a>
               </div>
+
               <div
                 className="footer-personal text-center wow fadeInDown"
                 data-wow-delay="0.7s"
@@ -107,4 +64,4 @@ function LandingPage() {
   );
 }
 
-export default LandingPage;
+export default MainIntro;

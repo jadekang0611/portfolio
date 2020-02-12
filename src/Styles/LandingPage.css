@@ -1,4 +1,68 @@
-/* MY MAIN SECTION STYLE */
+/* MY HELPER CLASSES */
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Poppins;
+}
+
+::-moz-selection {
+  color: #1106cc;
+  background: #ffff99;
+}
+
+::selection {
+  color: #1106cc;
+  background: #ffff99;
+}
+
+.nopadding {
+  padding: 0;
+}
+
+.custompadding {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.no-margin {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.underline {
+  display: inline;
+  border-bottom: 3px solid #111;
+  padding-bottom: 0;
+}
+
+.logo {
+  margin: 0 auto;
+  padding: 0px 0px;
+  z-index: 111;
+}
+
+.logo:hover,
+.logo:focus {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* MY MAIN INTRO SECTION STYLE */
 .main {
   width: 100%;
   height: 100%;
@@ -263,4 +327,294 @@
     list-style-type: none;
     float: none !important;
   }
+}
+
+/* MY SUB PERSONAL SECTION STYLE */
+
+.sub-personal #sub-about {
+  background: #ffffff;
+}
+
+#sub-about .about-intro {
+  padding: 160px 24px 56px 24px;
+  overflow: hidden;
+}
+
+#sub-about .about-intro h4 {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  color: #666666;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin: 0 0 24px 0;
+}
+
+#sub-about .about-intro h1 {
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 600;
+  color: #404040;
+  letter-spacing: -1px;
+  line-height: 1.2;
+  margin: 0 0 16px 0;
+}
+
+#sub-about .about-intro h3 {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  color: #606060;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  margin: 0 0 32px 0;
+}
+
+#sub-about .about-intro p {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  color: #a1a1a1;
+  letter-spacing: 0;
+  line-height: 1.6;
+  margin: 0 0 32px 0;
+}
+
+#sub-about .sub-social {
+  padding: 48px 0 0 0;
+}
+
+#sub-about .sub-social h2 {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  color: #606060;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  margin: 0 0 32px 0;
+}
+
+#sub-about .sub-footer {
+  padding: 24px 0 0 0;
+}
+
+#sub-about .nav-social ul {
+  list-style: none;
+  text-align: left;
+  padding: 0;
+}
+
+#sub-about .nav-social li {
+  display: inline !important;
+  padding-left: 0 !important;
+  padding-right: 0.5em;
+}
+
+#sub-about .nav-social .font-awesome li a {
+  display: inline-block;
+  position: relative;
+  width: 32px;
+  height: 32px;
+  padding-right: 0px;
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff;
+  background: #4858ef;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 2.15em;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 16%;
+}
+
+#sub-about .nav-social a:before {
+  display: none;
+}
+
+#sub-about .sub-footer p {
+  font-family: Poppins;
+  color: #323232;
+  font-size: 16px;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+
+#sub-about .sub-footer a {
+  font-family: Poppins;
+  color: #4858ef;
+  font-size: 16px;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+
+/* THIS IS TO DIM MY MAIN CONTENT */
+.main::before {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 0;
+  position: 0;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  z-index: 100;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: opacity 0.5s ease, height 1ms 0.5s ease;
+  -moz-transition: opacity 0.5s ease, height 1ms 0.5s ease;
+  -o-transition: opacity 0.5s ease, height 1ms 0.5s ease;
+  transition: opacity 0.5s ease, height 1ms 0.5s ease;
+}
+
+.main.is-active.main::before {
+  -webkit-transition: opacity 0.5s ease;
+  -moz-transition: opacity 0.5s ease;
+  -o-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+  height: 100%;
+  opacity: 1;
+}
+
+#sub-about.is-active {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+  visibility: visible;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#sub-about.is-active li:nth-child(2) {
+  transition-delay: 0.1s;
+}
+
+#sub-about.is-active li:nth-child(3) {
+  transition-delay: 0.2s;
+}
+
+#sub-about.is-active li:nth-child(4) {
+  transition-delay: 0.3s;
+}
+
+#sub-about.is-active li:nth-child(5) {
+  transition-delay: 0.4s;
+}
+
+#sub-about .copyright-text {
+  font-family: Work Sans;
+  font-size: 12px;
+  font-weight: 200;
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 20px 20px;
+}
+
+.nav-social ul {
+  padding: 0.5em;
+  list-style-type: none;
+  text-align: center;
+}
+
+.nav-social li {
+  display: inline !important;
+  padding-left: 1em !important;
+}
+
+.nav-social .font-awesome,
+.nav-social a {
+  font-size: 32px;
+  color: #4858ef;
+}
+
+.nav-social a:before {
+  display: none;
+}
+
+/* Navigation Triggering & Hamburger Menu */
+
+.nav-trigger {
+  padding: 8px;
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  border-radius: 4px;
+  /* I may change the radius later not sure if i want to make a circle or not*/
+  background: #f2f2f1;
+  z-index: 111;
+  transition: all 400ms ease-in;
+}
+
+.is-active.nav-trigger {
+  background: #dddddd;
+}
+
+.hamburger {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  transition: transform 500ms ease-in-out;
+}
+
+.nav-trigger:active .hamburger {
+  transition: transform 50ms;
+  transform: scale(0.95);
+}
+
+.hamburger::before,
+.hamburger::after,
+.hamburger .icon {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  left: 1px;
+  background: #4858ef;
+  transform-origin: 100% 50%;
+  transition: all 100ms ease-in-out;
+}
+
+.hamburger::before {
+  top: 5px;
+}
+
+.hamburger .icon {
+  width: 24px;
+  top: 11px;
+  transform-origin: 50% 50%;
+}
+
+.hamburger::after {
+  top: 16px;
+}
+
+.is-active .hamburger::before,
+.is-active .hamburger::after,
+.is-active .hamburger .icon {
+  background: #4858ef;
+}
+
+.is-active .hamburger::before {
+  transform: translate3d(-4px, -1px, 0) rotateZ(45deg);
+}
+
+.is-active .hamburger .icon {
+  transform: rotateY(-90deg);
+  transition: transform 100ms, background-color 400ms ease-in-out;
+}
+
+.is-active .hamburger::after {
+  transform: translate3d(-4px, 2px, 0) rotateZ(45deg);
 }
