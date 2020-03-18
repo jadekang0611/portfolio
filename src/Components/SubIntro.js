@@ -2,6 +2,7 @@ import React from 'react';
 import '../Styles/Intros.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Button from 'react-bootstrap/Button';
+import { Link } from 'react-router-dom';
 
 function SubIntro() {
   return (
@@ -52,10 +53,10 @@ function SubIntro() {
                     />
                   </a>
                 </li>
-                <li>
-                  <Button>Download my resume</Button>
-                </li>
               </ul>
+              <Link to="/files/jadekangResume.pdf" target="_blank" download>
+                Download my resume
+              </Link>
             </div>
           </div>
         </div>
