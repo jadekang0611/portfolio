@@ -1,6 +1,7 @@
 import React from 'react';
 import '../Styles/Intros.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Button from 'react-bootstrap/Button';
 
 function SubIntro() {
   return (
@@ -50,6 +51,9 @@ function SubIntro() {
                       className="font-awesome"
                     />
                   </a>
+                </li>
+                <li>
+                  <Button>Download my resume</Button>
                 </li>
               </ul>
             </div>
