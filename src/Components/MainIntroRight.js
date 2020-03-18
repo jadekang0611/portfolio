@@ -28,7 +28,7 @@ function MainIntroRight() {
           <a
             className="btn-contact wow fadeInDown"
             data-wow-delay="0.6s"
-            href="mailto:contact@domain.com"
+            href="mailto:jade@jadekang.me"
           >
             Contact Me
           </a>

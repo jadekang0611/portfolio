@@ -11,12 +11,12 @@ function SubIntro() {
           <h1>I'm Jade Kang</h1>
           <h3>Software Engineer / CPA / Scrum Master</h3>
           <p>
-            Eu euismod placerat mandamus sea, autem timeam hendrerit eu vel, sea
-            debet conclusionemque te. Veniam persius suavitate sit cu. Brute
-            suavitate maiestatis qui in, an eam sumo illud. Explicari
-            necessitatibus eam et. Ea oratio voluptua postulant eam, sit eu tale
-            molestiae, verear latine concludaturque ex vel. Sed mutat etiam
-            utroque te, vis at error eirmod numquam.
+            I'm a creative-minded, analytical, and organized software developer
+            with a passion for building software that delivers great UI & UX. My
+            background as a Certified Public Accountant and startup founder
+            displays my abilities in multitasking and researching while
+            operating in a collaborative agile environment with a focus on the
+            company’s profitability.
           </p>
           <p>
             Brute suavitate maiestatis qui in, an eam sumo illud. Explicari
@@ -36,7 +36,7 @@ function SubIntro() {
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://www.linkedin.com/in/jadekang/">
                     <FontAwesomeIcon
                       icon={['fab', 'linkedin']}
                       className="font-awesome"
@@ -44,9 +44,9 @@ function SubIntro() {
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://stackoverflow.com/users/13034297/jade">
                     <FontAwesomeIcon
-                      icon={['fab', 'slack']}
+                      icon={['fab', 'stack-overflow']}
                       className="font-awesome"
                     />
                   </a>
