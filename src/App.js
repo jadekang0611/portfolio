@@ -39,7 +39,7 @@ function App() {
       <div className="main">
         <section className="split-home">
           <MainIntroLeft />
-          {toggleSections()};
+          {toggleSections()}
         </section>
       </div>
     </div>

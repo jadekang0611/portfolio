@@ -90,11 +90,25 @@ h6 {
 
 .personal {
   background: #f1f1f1;
-  background: url(../image/bg.jpg) no-repeat center center;
-  background-size: cover;
+  /* background: url(../image/bg.jpg) no-repeat center center;
+  background-size: cover; */
 }
 
 .right-section {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 0 50px 0 50px;
+  width: 50%;
+  height: 100%;
+  background: #ffffff;
+  z-index: 99;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.left-section {
   position: absolute;
   right: 0;
   top: 0;
