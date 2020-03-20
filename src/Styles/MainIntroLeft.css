@@ -1,18 +1,18 @@
 .featured-container {
-  column-count: 4;
+  column-count: 3;
   column-gap: 1em;
-  margin: 1.5em;
-  padding: 0;
+  margin: 0.5em;
+  padding: 0.85em;
   font-size: 0.8em;
 }
 
 .featured-card {
   display: inline-block;
+  border-radius: 0.85em;
   background: #fff;
   padding: 1em;
   margin: 0 0 1.5em;
   width: 100%;
-  -webkit-transition: 1s ease all;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -20,6 +20,7 @@
 }
 
 .featured-card img {
+  border-radius: 0.85em;
   max-width: 100%;
 }
 

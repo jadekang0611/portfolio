@@ -18,27 +18,39 @@ function MainIntroLeft() {
         <img src="http://www.pixeden.com/media/k2/galleries/511/001-business-card-mockup-vol-22-box-brand-psd.jpg" />
       </div>
       <div className="featured-card">
-        1
+        4
         <img src="http://www.pixeden.com/media/k2/galleries/468/001-business-card-clip-brand-mock-up-vol-20-psd.jpg" />
       </div>
       <div className="featured-card">
-        2
+        5
         <img src="http://www.graphicsfuel.com/wp-content/uploads/2015/11/branding-mockup-psd.jpg" />
       </div>
       <div className="featured-card">
-        3
+        6
         <img src="http://www.pixeden.com/media/k2/galleries/511/001-business-card-mockup-vol-22-box-brand-psd.jpg" />
       </div>
       <div className="featured-card">
-        1
+        7
         <img src="http://www.pixeden.com/media/k2/galleries/468/001-business-card-clip-brand-mock-up-vol-20-psd.jpg" />
       </div>
       <div className="featured-card">
-        2
+        8
         <img src="http://www.graphicsfuel.com/wp-content/uploads/2015/11/branding-mockup-psd.jpg" />
       </div>
       <div className="featured-card">
-        3
+        9
+        <img src="http://www.pixeden.com/media/k2/galleries/511/001-business-card-mockup-vol-22-box-brand-psd.jpg" />
+      </div>
+      <div className="featured-card">
+        10
+        <img src="http://www.pixeden.com/media/k2/galleries/468/001-business-card-clip-brand-mock-up-vol-20-psd.jpg" />
+      </div>
+      <div className="featured-card">
+        11
+        <img src="http://www.graphicsfuel.com/wp-content/uploads/2015/11/branding-mockup-psd.jpg" />
+      </div>
+      <div className="featured-card">
+        12
         <img src="http://www.pixeden.com/media/k2/galleries/511/001-business-card-mockup-vol-22-box-brand-psd.jpg" />
       </div>
     </section>
