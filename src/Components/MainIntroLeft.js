@@ -3,6 +3,8 @@ import '../Styles/Intros.css';
 import '../Styles/MainIntroLeft.css';
 import Badge from 'react-bootstrap/Badge';
 import BingleImage from '../images/BINGLE.png';
+import DevatingImage from '../images/devating.png';
+import DorstepImage from '../images/dorstep.png';
 
 function MainIntroLeft() {
   return (
@@ -27,7 +29,7 @@ function MainIntroLeft() {
       </div>
 
       <div className="featured-card five">
-        <img src="http://www.graphicsfuel.com/wp-content/uploads/2015/11/branding-mockup-psd.jpg" />
+        <img src={DevatingImage} alt="devating-main" />
       </div>
       <div className="featured-card six">
         <img src="http://www.pixeden.com/media/k2/galleries/511/001-business-card-mockup-vol-22-box-brand-psd.jpg" />
