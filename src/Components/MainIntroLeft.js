@@ -5,6 +5,7 @@ import Badge from 'react-bootstrap/Badge';
 import BingleImage from '../images/BINGLE.png';
 import DevatingImage from '../images/devating.png';
 import DorstepImage from '../images/dorstep.png';
+import CelezumImage from '../images/celeZum.png';
 
 function MainIntroLeft() {
   return (
@@ -43,10 +44,10 @@ function MainIntroLeft() {
         <h2 className="title-section">projects</h2>
       </div>
       <div className="featured-card nine">
-        <img src="http://www.graphicsfuel.com/wp-content/uploads/2015/11/branding-mockup-psd.jpg" />
+        <img src={DorstepImage} alt="dorstep" />
       </div>
       <div className="featured-card ten">
-        <img src="http://www.graphicsfuel.com/wp-content/uploads/2015/11/branding-mockup-psd.jpg" />
+        <img src={CelezumImage} />
       </div>
     </section>
   );
