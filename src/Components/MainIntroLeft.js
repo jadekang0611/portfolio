@@ -3,9 +3,12 @@ import '../Styles/Intros.css';
 import '../Styles/MainIntroLeft.css';
 import Badge from 'react-bootstrap/Badge';
 import BingleImage from '../images/BINGLE.png';
+import RobinImage from '../images/robin.png';
 import DevatingImage from '../images/devating.png';
 import DorstepImage from '../images/dorstep.png';
 import CelezumImage from '../images/celeZum.png';
+import ArticleImage1 from '../images/article1.jpg';
+import ArticleImage2 from '../images/article2.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 
@@ -18,10 +21,7 @@ function MainIntroLeft() {
         <h2 className="title-section">startups</h2>
       </div>
       <div className="featured-card two hover-effect">
-        <img
-          src="http://www.graphicsfuel.com/wp-content/uploads/2015/11/branding-mockup-psd.jpg"
-          alt="daily-xp"
-        />
+        <img src={RobinImage} alt="robin" />
         <div className="modalIndicator">
           <a href="https://google.com">
             {' '}
@@ -65,7 +65,7 @@ function MainIntroLeft() {
         </div>
       </div>
       <div className="featured-card six hover-effect">
-        <img src="http://www.pixeden.com/media/k2/galleries/511/001-business-card-mockup-vol-22-box-brand-psd.jpg" />
+        <img src={ArticleImage2} alt="article 2" />
         <div className="modalIndicator">
           <a href="https://google.com">
             {' '}
@@ -78,7 +78,7 @@ function MainIntroLeft() {
         </div>
       </div>
       <div className="featured-card seven hover-effect">
-        <img src="http://www.pixeden.com/media/k2/galleries/468/001-business-card-clip-brand-mock-up-vol-20-psd.jpg" />
+        <img src={ArticleImage1} alt="article 1" />
         <div className="modalIndicator">
           <a href="https://google.com">
             {' '}

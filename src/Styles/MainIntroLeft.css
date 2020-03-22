@@ -67,10 +67,9 @@
 }
 
 .two {
-  background: #f35b04;
+  background: #ffffff;
   grid-row: 1 / span 2;
   grid-column: 2 / span 2;
-  padding-bottom: 24px;
 }
 
 .three {
@@ -109,11 +108,16 @@
   grid-column: 3;
 }
 
-.strtup-box {
-  background: #ffffff;
+.startup-box {
+  background: #f35b04;
   grid-row: 2;
   grid-column: 1;
   color: #050505;
+}
+
+.startup-box span {
+  color: #ffffff;
+  font-weight: 600;
 }
 
 .article-box {
@@ -138,6 +142,7 @@
 span {
   color: #4858ef;
   font-size: 16px;
+  font-weight: 600;
 }
 
 .hover-effect {
