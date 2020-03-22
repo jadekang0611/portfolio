@@ -3,7 +3,6 @@
   grid-gap: 1.5em;
   grid-template-rows: 200px 100px 400px 1fr;
   grid-template-columns: 200px 100px 1fr 1fr;
-  background-color: black;
   padding: 1em;
   font-size: 0.8em;
   background: #f2f2f2;
@@ -139,4 +138,53 @@
 span {
   color: #4858ef;
   font-size: 16px;
+}
+
+.hover-effect {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+}
+
+.hover-effect:hover {
+  width: 100%;
+  transition: 0.6s ease;
+  opacity: 0.7;
+}
+
+.modalIndicator {
+  position: absolute;
+  align-content: center;
+  font-size: 0.95vw;
+  padding-bottom: 16px;
+  font-weight: 600;
+}
+
+.hover-effect .modalIndicator {
+  visibility: hidden;
+}
+
+.hover-effect:hover .modalIndicator {
+  visibility: visible;
+  background: #4858ef;
+  padding: 8px 16px;
+  border-radius: 24px;
+}
+
+.modalIndicator a {
+  color: #fff;
+  opacity: 0.2;
+}
+
+.modalIndicator a:hover {
+  text-decoration: none;
+  color: #fff;
+  opacity: 1;
+}
+
+.modal-icon {
+  margin-left: 4px;
+  margin-right: 4px;
 }

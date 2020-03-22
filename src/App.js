@@ -8,9 +8,13 @@ import SubIntro from './Components/SubIntro';
 import { render } from '@testing-library/react';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
-import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons';
+import {
+  faCheckSquare,
+  faCoffee,
+  faExternalLinkAlt
+} from '@fortawesome/free-solid-svg-icons';
 import 'bootstrap/dist/css/bootstrap.min.css';
-library.add(fab, faCheckSquare, faCoffee);
+library.add(fab, faCheckSquare, faCoffee, faExternalLinkAlt);
 
 function App() {
   const [showSubIntro, setShowSubIntro] = useState(false);
