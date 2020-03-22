@@ -9,6 +9,9 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Badge from 'react-bootstrap/Badge';
 import '../Styles/Modal.css';
+import '../Styles/Badge.css';
+import '../Styles/Button.css';
+import * as CONSTANTS from '../Constants';
 
 function Robin(props) {
   return (
@@ -18,10 +21,10 @@ function Robin(props) {
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
-      <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">Article 1</Modal.Title>
+      <Modal.Header closeButton className="modal-header">
+        <Modal.Title id="contained-modal-title-vcenter">ROBIN</Modal.Title>
       </Modal.Header>
-      <Modal.Body scrollable={true}>
+      <Modal.Body scrollable={true} className="modal-body">
         <Container>
           <Row>
             <Col className="snapshots" xs={12} md={12} lg={6}>
@@ -43,11 +46,27 @@ function Robin(props) {
                 consequat commodo anim cillum. Lorem nostrud proident in sit.
                 Excepteur eu duis duis adipisicing.
               </p>
-              <Badge variant="danger">Javascript</Badge>
-              <Badge variant="danger">Javascript</Badge>
-              <Badge variant="danger">Javascript</Badge>
-              <a href="https://myrobin.io">Live</a>
-              <a href="https://myrobin.io">Live</a>
+              <div className="technologies">
+                <Badge className="badge" pill variant="danger">
+                  Javascript
+                </Badge>
+                <Badge className="badge" pill variant="danger">
+                  Javascript
+                </Badge>
+                <Badge className="badge" pill variant="danger">
+                  Javascript
+                </Badge>
+              </div>
+              <br></br>
+              <div className="buttons">
+                <a className="demo-button" href={CONSTANTS.robinLink}>
+                  Live Demo
+                </a>
+                <div className="spacing"></div>
+                <a className="contact-me-button" href={CONSTANTS.myEmail}>
+                  Contact Me
+                </a>
+              </div>
             </Col>
           </Row>
         </Container>

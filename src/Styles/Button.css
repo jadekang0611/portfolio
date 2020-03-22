@@ -1,0 +1,41 @@
+.buttons {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.demo-button {
+  padding: 4px 16px;
+  border-radius: 16px;
+  background: #fff;
+  text-transform: none;
+  box-shadow: 1px 2px 4px 0 #ccc;
+  border: 2px solid #fff;
+}
+
+.contact-me-button {
+  background: #fff;
+  padding: 4px 16px;
+  border-radius: 16px;
+  box-shadow: 1px 2px 4px 0 #ccc;
+  border: 2px solid #fff;
+}
+
+.spacing {
+  width: 1em;
+}
+
+.buttons a:hover {
+  text-decoration: none;
+  color: #4858ef;
+}
+
+.demo-button:hover {
+  border: 2px solid #4858ef;
+  transition: 0.5s ease;
+}
+
+.contact-me-button:hover {
+  border: 2px solid #4858ef;
+  transition: 0.5s ease;
+}
