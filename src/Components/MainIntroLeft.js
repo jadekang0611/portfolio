@@ -11,8 +11,19 @@ import ArticleImage1 from '../images/article1.jpg';
 import ArticleImage2 from '../images/article2.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
+import * as CONSTANTS from '../Constants';
+import Robin from '../ modals/Robin';
 
 function MainIntroLeft() {
+  const [showRobin, setShowRobin] = useState(false);
+
+  const robinOpenHandler = () => {
+    setShowRobin(true);
+  };
+  const robinCloseHandler = () => {
+    setShowRobin(false);
+  };
+
   return (
     <section className="left-section featured-container">
       <div className="featured-card one"></div>
@@ -23,15 +34,16 @@ function MainIntroLeft() {
       <div className="featured-card two hover-effect">
         <img src={RobinImage} alt="robin" />
         <div className="modalIndicator">
-          <a href="https://google.com">
+          <button onClick={robinOpenHandler}>
             {' '}
             <FontAwesomeIcon
               className="modal-icon"
               icon={faExternalLinkAlt}
             />{' '}
             View details
-          </a>
+          </button>
         </div>
+        <Robin show={showRobin} onHide={robinCloseHandler} />
       </div>
       <div className="featured-card three hover-effect">
         <img src={BingleImage} alt="bingle-logo" />

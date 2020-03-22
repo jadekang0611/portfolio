@@ -1,6 +1,7 @@
 import React from 'react';
 import '../Styles/Intros.css';
 import logo from '../image/logo-animation.gif';
+import * as CONSTANTS from '../Constants';
 
 function MainIntroRight() {
   return (
@@ -28,7 +29,7 @@ function MainIntroRight() {
           <a
             className="btn-contact wow fadeInDown"
             data-wow-delay="0.6s"
-            href="mailto:jade@jadekang.me"
+            href={CONSTANTS.myEmail}
           >
             Contact Me
           </a>

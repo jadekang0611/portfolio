@@ -3,6 +3,7 @@ import '../Styles/Intros.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
+import * as CONSTANTS from '../Constants';
 
 function SubIntro() {
   return (
@@ -30,7 +31,7 @@ function SubIntro() {
             <div class="nav-social">
               <ul>
                 <li>
-                  <a href="https://github.com/jadekang0611">
+                  <a href={CONSTANTS.myGithub}>
                     <FontAwesomeIcon
                       icon={['fab', 'github-square']}
                       className="font-awesome"
@@ -38,7 +39,7 @@ function SubIntro() {
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.linkedin.com/in/jadekang/">
+                  <a href={CONSTANTS.myLinkedIn}>
                     <FontAwesomeIcon
                       icon={['fab', 'linkedin']}
                       className="font-awesome"
@@ -46,7 +47,7 @@ function SubIntro() {
                   </a>
                 </li>
                 <li>
-                  <a href="https://stackoverflow.com/users/13034297/jade">
+                  <a href={CONSTANTS.myStackOverflow}>
                     <FontAwesomeIcon
                       icon={['fab', 'stack-overflow']}
                       className="font-awesome"
@@ -54,7 +55,7 @@ function SubIntro() {
                   </a>
                 </li>
               </ul>
-              <Link to="/files/jadekangResume.pdf" target="_blank" download>
+              <Link to={CONSTANTS.myResume} target="_blank" download>
                 Download my resume
               </Link>
             </div>
