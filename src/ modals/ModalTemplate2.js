@@ -9,7 +9,6 @@ import '../Styles/Button.css';
 import * as CONSTANTS from '../Constants';
 
 function ModalTemplate2(props) {
-  console.log(props.data.header);
   return (
     <Modal
       {...props}

@@ -7,27 +7,24 @@ function MainIntroRight() {
   return (
     <section className="right-section">
       <div className="main-logo">
-        <a className="wow fadeIn" data-wow-delay="0.3s" href="#">
+        <a href="https://www.jadekang.me">
           <img src={logo} width="56" height="56" alt="logo" />
         </a>
       </div>
       <div className="intro">
         <div className="intro-text">
-          <h4 className="wow fadeInDown" data-wow-delay="0.4s">
-            Software Engineer based in California
-          </h4>
-          <h1 className="wow fadeInDown" data-wow-delay="0.5s">
-            Jade Kang
-          </h1>
-          <p className="wow fadeInDown" data-wow-delay="0.6s">
-            Everything does something good, only a few make remarkable{' '}
+          <h4>Software Engineer based in California</h4>
+          <h1>Jade Kang</h1>
+          <p>
+            Have you met somebody with a background in finance, great personal
+            skills,
             <br className="visible-lg" />
-            things. So, I built this portfolio to showcase my talent in{' '}
-            <br className="visible-lg" />
-            the as honest medium as possible for you.
+            and technical skills? If you haven't, you have just found that
+            person. <br className="visible-lg" />I built this portfolio to
+            showcase my unique talents for you.
           </p>
           <a
-            className="btn-contact wow fadeInDown"
+            className="btn-contact"
             data-wow-delay="0.6s"
             href={CONSTANTS.myEmail}
           >

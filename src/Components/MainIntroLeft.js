@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import '../Styles/Intros.css';
 import '../Styles/MainIntroLeft.css';
-import Badge from 'react-bootstrap/Badge';
 import BingleImage from '../images/BINGLE.png';
 import RobinImage from '../images/robin.png';
 import DevatingImage from '../images/devating.png';

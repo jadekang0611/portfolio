@@ -26,17 +26,17 @@ function ModalTemplate(props) {
         <Container>
           <Row>
             <Col className="snapshots" xs={12} md={12} lg={6}>
-              {props.data.images.map(img => {
-                return <img src={img} alt="screenshots" />;
+              {props.data.images.map((img, id) => {
+                return <img key={id} src={img} alt="screenshots" />;
               })}
             </Col>
             <Col className="descriptions" xs={12} md={12} lg={6}>
               <h4>Description</h4>
               <p>{props.data.description}</p>
               <div className="technologies">
-                {props.data.technologies.map(tech => {
+                {props.data.technologies.map((tech, id) => {
                   return (
-                    <Badge className="badge" pill>
+                    <Badge key={id} className="badge" pill>
                       {tech}
                     </Badge>
                   );
