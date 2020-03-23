@@ -132,7 +132,7 @@ span {
 .modalIndicator {
   position: absolute;
   align-content: center;
-  font-size: 1vw;
+  font-size: 1em;
   padding-bottom: 16px;
   font-weight: 600;
 }
@@ -184,7 +184,7 @@ span {
     grid-template-rows: 200px 200px 200px 200px 100px 200px;
   }
   .modalIndicator {
-    font-size: 16px;
+    font-size: 0.75em;
   }
   .one {
     background: #f3f3f3;
