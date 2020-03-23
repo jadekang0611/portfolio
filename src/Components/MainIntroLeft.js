@@ -17,7 +17,6 @@ import { information } from '../data/information.js';
 
 function MainIntroLeft() {
   const [showRobin, setShowRobin] = useState(false);
-
   const robinOpenHandler = () => {
     setShowRobin(true);
   };
@@ -25,6 +24,37 @@ function MainIntroLeft() {
     setShowRobin(false);
   };
 
+  const [showBingle, setShowBingle] = useState(false);
+  const bingleOpenHandler = () => {
+    setShowBingle(true);
+  };
+  const bingleCloseHandler = () => {
+    setShowBingle(false);
+  };
+
+  const [showDorstep, setShowDorstep] = useState(false);
+  const dorStepOpenHandler = () => {
+    setShowDorstep(true);
+  };
+  const dorStepCloseHandler = () => {
+    setShowDorstep(false);
+  };
+
+  const [showDevating, setShowDevating] = useState(false);
+  const devatingOpenHandler = () => {
+    setShowDevating(true);
+  };
+  const devatingCloseHandler = () => {
+    setShowDevating(false);
+  };
+
+  const [showCeleZum, setShowCeleZum] = useState(false);
+  const celeZumOpenHandler = () => {
+    setShowCeleZum(true);
+  };
+  const celeZumCloseHandler = () => {
+    setShowCeleZum(false);
+  };
   return (
     <section className="left-section featured-container">
       <div className="featured-card one"></div>
@@ -53,15 +83,20 @@ function MainIntroLeft() {
       <div className="featured-card three hover-effect">
         <img src={BingleImage} alt="bingle-logo" />
         <div className="modalIndicator">
-          <a href="https://google.com">
+          <button onClick={bingleOpenHandler}>
             {' '}
             <FontAwesomeIcon
               className="modal-icon"
               icon={faExternalLinkAlt}
             />{' '}
             View details
-          </a>
+          </button>
         </div>
+        <ModalTemplate
+          show={showBingle}
+          data={information[1]}
+          onHide={bingleCloseHandler}
+        />
       </div>
       <div className="featured-card article-box">
         <span>category</span>
@@ -71,15 +106,20 @@ function MainIntroLeft() {
       <div className="featured-card five hover-effect">
         <img src={DevatingImage} alt="devating-main" />
         <div className="modalIndicator">
-          <a href="https://google.com">
+          <button onClick={devatingOpenHandler}>
             {' '}
             <FontAwesomeIcon
               className="modal-icon"
               icon={faExternalLinkAlt}
             />{' '}
             View details
-          </a>
+          </button>
         </div>
+        <ModalTemplate
+          show={showDevating}
+          data={information[3]}
+          onHide={devatingCloseHandler}
+        />
       </div>
       <div className="featured-card six hover-effect">
         <img src={ArticleImage2} alt="article 2" />
@@ -115,28 +155,38 @@ function MainIntroLeft() {
       <div className="featured-card nine hover-effect">
         <img src={DorstepImage} alt="dorstep" />
         <div className="modalIndicator">
-          <a href="https://google.com">
+          <button onClick={dorStepOpenHandler}>
             {' '}
             <FontAwesomeIcon
               className="modal-icon"
               icon={faExternalLinkAlt}
             />{' '}
             View details
-          </a>
+          </button>
         </div>
+        <ModalTemplate
+          show={showDorstep}
+          data={information[2]}
+          onHide={dorStepCloseHandler}
+        />
       </div>
       <div className="featured-card ten hover-effect">
         <img src={CelezumImage} alt="celezum" />
         <div className="modalIndicator">
-          <a href="https://google.com">
+          <button onClick={celeZumOpenHandler}>
             {' '}
             <FontAwesomeIcon
               className="modal-icon"
               icon={faExternalLinkAlt}
             />{' '}
             View details
-          </a>
+          </button>
         </div>
+        <ModalTemplate
+          show={showCeleZum}
+          data={information[4]}
+          onHide={celeZumCloseHandler}
+        />
       </div>
     </section>
   );

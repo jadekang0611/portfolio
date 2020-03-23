@@ -27,13 +27,11 @@ function ModalTemplate(props) {
         <Container>
           <Row>
             <Col className="snapshots" xs={12} md={12} lg={6}>
-              <img src="https://via.placeholder.com/160" alt="photo1" />
-
-              <img src="https://via.placeholder.com/160" alt="photo2" />
-
-              <img src="https://via.placeholder.com/160" alt="photo3" />
-
-              <img src="https://via.placeholder.com/160" alt="photo4" />
+              {props.data.images.map(img => {
+                return (
+                    <img src={img} alt="screenshots" />
+                );
+              })}
             </Col>
             <Col className="descriptions" xs={12} md={12} lg={6}>
               <h4>Description</h4>
