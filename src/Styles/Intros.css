@@ -633,3 +633,7 @@ h6 {
 .is-active .hamburger::after {
   transform: translate3d(-4px, 2px, 0) rotateZ(45deg);
 }
+
+.tech-list {
+  list-style: none;
+}

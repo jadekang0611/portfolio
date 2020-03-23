@@ -11,8 +11,8 @@ import ArticleImage1 from '../images/article1.jpg';
 import ArticleImage2 from '../images/article2.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
-import * as CONSTANTS from '../Constants';
 import ModalTemplate from '../ modals/ModalTemplate';
+import ModalTemplate2 from '../ modals/ModalTemplate2';
 import { information } from '../data/information.js';
 
 function MainIntroLeft() {
@@ -55,6 +55,23 @@ function MainIntroLeft() {
   const celeZumCloseHandler = () => {
     setShowCeleZum(false);
   };
+
+  const [showArticle1, setShowArticle1] = useState(false);
+  const article1OpenHandler = () => {
+    setShowArticle1(true);
+  };
+  const article1CloseHandler = () => {
+    setShowArticle1(false);
+  };
+
+  const [showArticle2, setShowArticle2] = useState(false);
+  const article2OpenHandler = () => {
+    setShowArticle2(true);
+  };
+  const article2CloseHandler = () => {
+    setShowArticle2(false);
+  };
+
   return (
     <section className="left-section featured-container">
       <div className="featured-card one"></div>
@@ -124,28 +141,38 @@ function MainIntroLeft() {
       <div className="featured-card six hover-effect">
         <img src={ArticleImage2} alt="article 2" />
         <div className="modalIndicator">
-          <a href="https://google.com">
+          <button onClick={article2OpenHandler}>
             {' '}
             <FontAwesomeIcon
               className="modal-icon"
               icon={faExternalLinkAlt}
             />{' '}
             View details
-          </a>
+          </button>
         </div>
+        <ModalTemplate2
+          show={showArticle2}
+          data={information[6]}
+          onHide={article2CloseHandler}
+        />
       </div>
       <div className="featured-card seven hover-effect">
         <img src={ArticleImage1} alt="article 1" />
         <div className="modalIndicator">
-          <a href="https://google.com">
+          <button onClick={article1OpenHandler}>
             {' '}
             <FontAwesomeIcon
               className="modal-icon"
               icon={faExternalLinkAlt}
             />{' '}
             View details
-          </a>
+          </button>
         </div>
+        <ModalTemplate2
+          show={showArticle1}
+          data={information[5]}
+          onHide={article1CloseHandler}
+        />
       </div>
 
       <div className="featured-card project-box ">

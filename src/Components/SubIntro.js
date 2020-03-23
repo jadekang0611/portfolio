@@ -1,9 +1,12 @@
 import React from 'react';
 import '../Styles/Intros.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 import * as CONSTANTS from '../Constants';
+import Badge from 'react-bootstrap/Badge';
+import '../Styles/Badge.css';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 function SubIntro() {
   return (
@@ -21,12 +24,18 @@ function SubIntro() {
             operating in a collaborative agile environment with a focus on the
             company’s profitability.
           </p>
-          <p>
-            Brute suavitate maiestatis qui in, an eam sumo illud. Explicari
-            necessitatibus eam et. Ea oratio voluptua postulant eam, sit eu tale
-            molestiae, verear latine concludaturque ex vel. Sed mutat etiam
-            utroque te, vis at error eirmod numquam.
-          </p>
+          <p>I have experience with</p>
+
+          <Row>
+            {CONSTANTS.technologies.map(tech => {
+              return (
+                <Col lg={4} md={4} xs={3}>
+                  <Badge className="badge-intro">{tech}</Badge>
+                </Col>
+              );
+            })}
+          </Row>
+
           <div class="sub-footer">
             <div class="nav-social">
               <ul>

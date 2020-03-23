@@ -4,8 +4,15 @@ export const information = [
     header: 'Robin',
     description:
       'Robin is a web application built to help software engineers in the U.S. and South Korea prepare for job interviews and practice solving problems. By receiving consistent, daily questions, users can get exposure to various forms of interview questions and gain the confidence that they deserve. All rights reserved at IntroLab, Inc.',
-    images: [],
-    technologies: ['React', 'Firebase', 'Express', 'Node']
+    images: [
+      '../images/Robin1.png',
+      '../images/Robin2.png',
+      '../images/Robin3.png',
+      '../images/Robin4.png'
+    ],
+    technologies: ['React', 'Firebase', 'Express', 'Node'],
+    demo: 'https://myrobin.io',
+    github: 'confidential'
   },
   {
     id: 2,
@@ -27,7 +34,9 @@ export const information = [
       'Firestore',
       'Node.js',
       'Express'
-    ]
+    ],
+    demo: 'https://play.google.com/store',
+    github: 'https://github.com/jadekang0611/bingle-frontend-ionic'
   },
   {
     id: 3,
@@ -88,5 +97,25 @@ export const information = [
     technologies: ['HTML5', 'CSS', 'JavaScript', 'Firebase'],
     demo: 'https://celezum.firebaseapp.com/',
     github: 'https://github.com/jadekang0611/celezum'
+  },
+  {
+    id: 6,
+    header: 'Road to The Innovative Zone',
+    image:
+      'https://media-exp1.licdn.com/dms/image/C5612AQGRoLdYdKndMg/article-cover_image-shrink_720_1280/0?e=1590624000&v=beta&t=gx2zSeGDYioYyRX6aN0TE0ZXYa0mvOXBrMjGKZbLrAs',
+    description:
+      '“Be innovative!” “Think out of the box!” These two seemingly trendy statements remained popular for almost a decade, often coming up during job interviews and corporate training. The public accounting world is no different. Working at two well-known large public accounting firms...',
+    link:
+      'https://www.linkedin.com/pulse/road-innovative-zone-jade-kang-cpa-psm/'
+  },
+  {
+    id: 7,
+    header: 'Transformative Aha! Moment',
+    image:
+      'https://media-exp1.licdn.com/dms/image/C5612AQG8BbyIS-vJSw/article-inline_image-shrink_1500_2232/0?e=1590624000&v=beta&t=Uw8ONjTElyfO89x9nt4zuQNxYtOewuf-7RZhWOY_Rbc',
+    description:
+      'A couple of months ago, I had an amazing opportunity to be invited to give a special lecture in Korea. I gave my lectures on “Career Success + Entrepreneurship” to approximately 100 students at Kookmin University. Among many questions asked by the students, I still remember the same question asked by several software engineering and business students...',
+    link:
+      'https://www.linkedin.com/pulse/transformative-aha-moment-jade-kang-cpa-psm/'
   }
 ];

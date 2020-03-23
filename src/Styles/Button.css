@@ -13,6 +13,24 @@
   border: 2px solid #fff;
 }
 
+.read-button {
+  padding: 4px 16px;
+  border-radius: 16px;
+  background: #fff;
+  text-transform: none;
+  box-shadow: 1px 2px 4px 0 #ccc;
+  border: 2px solid #fff;
+}
+
+.github-button {
+  padding: 4px 16px;
+  border-radius: 16px;
+  background: #fff;
+  text-transform: none;
+  box-shadow: 1px 2px 4px 0 #ccc;
+  border: 2px solid #fff;
+}
+
 .contact-me-button {
   background: #fff;
   padding: 4px 16px;
@@ -35,7 +53,17 @@
   transition: 0.5s ease;
 }
 
+.read-button:hover {
+  border: 2px solid #4858ef;
+  transition: 0.5s ease;
+}
+
 .contact-me-button:hover {
+  border: 2px solid #4858ef;
+  transition: 0.5s ease;
+}
+
+.github-button:hover {
   border: 2px solid #4858ef;
   transition: 0.5s ease;
 }

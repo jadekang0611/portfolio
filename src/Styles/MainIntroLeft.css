@@ -178,15 +178,19 @@ span {
   border-radius: 24px;
 }
 
-.modalIndicator a {
+.modalIndicator button {
   color: #fff;
   opacity: 0.2;
+  background: transparent;
+  border: none;
 }
 
-.modalIndicator a:hover {
+.modalIndicator button:hover {
   text-decoration: none;
   color: #fff;
   opacity: 1;
+  background: transparent;
+  border: none;
 }
 
 .modal-icon {

@@ -3,13 +3,13 @@ import Modal from 'react-bootstrap/Modal';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Badge from 'react-bootstrap/Badge';
-import '../Styles/Modal.css';
+import '../Styles/Modal2.css';
 import '../Styles/Badge.css';
 import '../Styles/Button.css';
 import * as CONSTANTS from '../Constants';
 
-function ModalTemplate(props) {
+function ModalTemplate2(props) {
+  console.log(props.data.header);
   return (
     <Modal
       {...props}
@@ -25,32 +25,16 @@ function ModalTemplate(props) {
       <Modal.Body scrollable={true} className="modal-body">
         <Container>
           <Row>
-            <Col className="snapshots" xs={12} md={12} lg={6}>
-              {props.data.images.map(img => {
-                return <img src={img} alt="screenshots" />;
-              })}
+            <Col className="snapshots2" xs={12} md={12} lg={6}>
+              <img src={props.data.image} alt={props.data.header} />
             </Col>
             <Col className="descriptions" xs={12} md={12} lg={6}>
               <h4>Description</h4>
               <p>{props.data.description}</p>
-              <div className="technologies">
-                {props.data.technologies.map(tech => {
-                  return (
-                    <Badge className="badge" pill>
-                      {tech}
-                    </Badge>
-                  );
-                })}
-              </div>
               <br></br>
               <div className="buttons">
-                <a className="demo-button" href={props.data.demo}>
-                  Demo
-                </a>
-                <div className="spacing"></div>
-
-                <a className="github-button" href={props.data.github}>
-                  Github
+                <a className="read-button" href={props.data.link}>
+                  Read more
                 </a>
                 <div className="spacing"></div>
                 <a className="contact-me-button" href={CONSTANTS.myEmail}>
@@ -65,4 +49,4 @@ function ModalTemplate(props) {
   );
 }
 
-export default ModalTemplate;
+export default ModalTemplate2;
