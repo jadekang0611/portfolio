@@ -12,7 +12,8 @@ import ArticleImage2 from '../images/article2.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import * as CONSTANTS from '../Constants';
-import Robin from '../ modals/Robin';
+import ModalTemplate from '../ modals/ModalTemplate';
+import { information } from '../data/information.js';
 
 function MainIntroLeft() {
   const [showRobin, setShowRobin] = useState(false);
@@ -43,7 +44,11 @@ function MainIntroLeft() {
             View details
           </button>
         </div>
-        <Robin show={showRobin} onHide={robinCloseHandler} />
+        <ModalTemplate
+          show={showRobin}
+          data={information[0]}
+          onHide={robinCloseHandler}
+        />
       </div>
       <div className="featured-card three hover-effect">
         <img src={BingleImage} alt="bingle-logo" />
