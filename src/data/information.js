@@ -3,12 +3,12 @@ export const information = [
     id: 1,
     header: 'Robin',
     description:
-      'Robin is a web application built to help software engineers in the U.S. and South Korea prepare for job interviews and practice solving problems. By receiving consistent, daily questions, users can get exposure to various forms of interview questions and gain the confidence that they deserve. All rights reserved at IntroLab, Inc.',
+      'Robin is a web application built to help aspiring software engineers in the U.S. prepare for job interviews and practice solving coding problems. By receiving consistent, daily questions, users can get exposure to various forms of interview questions and gain the confidence that they deserve. All rights reserved at IntroLab, Inc.',
     images: [
-      '../images/Robin1.png',
-      '../images/Robin2.png',
-      '../images/Robin3.png',
-      '../images/Robin4.png'
+      '../images/RobinScreen1.png',
+      '../images/RobinScreen2.png',
+      '../images/RobinScreen3.png',
+      '../images/RobinScreen4.png'
     ],
     technologies: ['React', 'Firebase', 'Express', 'Node'],
     demo: 'https://myrobin.io',
